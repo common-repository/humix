@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "humix/humix-block",
+  "version": "0.1.0",
+  "title": "Humix Block",
+  "category": "embed",
+  "icon": "humix-icon",
+  "description": "Humix Block for embedding videos",
+  "attributes": {
+    "url": {
+      "type": "string",
+      "default": ""
+    },
+    "providerNameSlug": {
+      "type": "string",
+      "default": ""
+    },
+    "allowResponsive": {
+      "type": "boolean",
+      "default": true
+    },
+    "responsive": {
+      "type": "boolean",
+      "default": false
+    },
+    "previewable": {
+      "type": "boolean",
+      "default": true
+    },
+    "floatOption": {
+      "type": "number",
+      "default": 1
+    },
+    "displayType": {
+      "type": "string",
+      "default": "url"
+    },
+    "html": {
+      "type": "string",
+      "default": ""
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "alignment": {
+      "type": "string",
+      "default": "none"
+    },
+    "matchOption": {
+      "type": "string",
+      "default": "MATCH_BY_TOPIC"
+    },
+    "matchCategories": {
+      "type": "array",
+      "default": []
+    },
+    "videoSourceOption": {
+      "type": "string",
+      "default": "ANY_SOURCE"
+    }
+  },
+  "supports": {
+    "spacing": {
+      "margin": true
+    }
+  },
+  "textdomain": "humix-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
